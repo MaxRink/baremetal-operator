@@ -189,3 +189,15 @@ updates:
   - "ok-to-test"
 
 ## release-0.13 branch config ends here
+- package-ecosystem: docker
+  directory: /
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 5
+  groups:
+    routine-updates:
+      patterns:
+      - '*'
+      update-types:
+      - minor
+      - patch
